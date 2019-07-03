@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0753262D-04AC-412A-AFD8-DF833FF7A82E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0753262D-04AC-412A-AFD8-DF833FF7A82E.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583841467.18575799</real>
+			<key>timeStoppedRecording</key>
+			<real>583841469.51569998</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>0753262D-04AC-412A-AFD8-DF833FF7A82E</string>
+		</dict>
+		<key>194D760B-68E8-4328-AB35-68748CDCCA24</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>194D760B-68E8-4328-AB35-68748CDCCA24.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583888994.633358</real>
+			<key>timeStoppedRecording</key>
+			<real>583888995.50595498</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>194D760B-68E8-4328-AB35-68748CDCCA24</string>
+		</dict>
+		<key>3443CF97-D25C-4CF3-9CCC-249EA91362D7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3443CF97-D25C-4CF3-9CCC-249EA91362D7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583888997.66325998</real>
+			<key>timeStoppedRecording</key>
+			<real>583888997.79547703</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>3443CF97-D25C-4CF3-9CCC-249EA91362D7</string>
+		</dict>
+		<key>45F05E4C-3A57-467C-8056-4065397C8631</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>45F05E4C-3A57-467C-8056-4065397C8631.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583841200.09167802</real>
+			<key>timeStoppedRecording</key>
+			<real>583841200.47741199</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>45F05E4C-3A57-467C-8056-4065397C8631</string>
+		</dict>
+		<key>4699E74F-9490-4680-998C-B045142EC3B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4699E74F-9490-4680-998C-B045142EC3B3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583838948.64421999</real>
+			<key>timeStoppedRecording</key>
+			<real>583838949.17073703</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>4699E74F-9490-4680-998C-B045142EC3B3</string>
+		</dict>
+		<key>47698D66-9071-4D22-9D01-4BB2699CCE44</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>47698D66-9071-4D22-9D01-4BB2699CCE44.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583838911.32642305</real>
+			<key>timeStoppedRecording</key>
+			<real>583838913.33755302</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>47698D66-9071-4D22-9D01-4BB2699CCE44</string>
+		</dict>
+		<key>5EC132CE-5FEC-4DF2-ADC0-00F40F0BE26E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5EC132CE-5FEC-4DF2-ADC0-00F40F0BE26E.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583836982.83578002</real>
+			<key>timeStoppedRecording</key>
+			<real>583836984.57728398</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>5EC132CE-5FEC-4DF2-ADC0-00F40F0BE26E</string>
+		</dict>
+		<key>5EC49BB1-34D5-46B3-AB21-CC5A99D5739A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5EC49BB1-34D5-46B3-AB21-CC5A99D5739A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583837159.13698995</real>
+			<key>timeStoppedRecording</key>
+			<real>583837159.97615898</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>5EC49BB1-34D5-46B3-AB21-CC5A99D5739A</string>
+		</dict>
+		<key>73110FD7-9C03-48C5-9F63-C3B743746EAE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>73110FD7-9C03-48C5-9F63-C3B743746EAE.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583841259.18192101</real>
+			<key>timeStoppedRecording</key>
+			<real>583841259.27439296</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>73110FD7-9C03-48C5-9F63-C3B743746EAE</string>
+		</dict>
+		<key>9C458A0B-0C8E-4656-B1EC-69035465F2D3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9C458A0B-0C8E-4656-B1EC-69035465F2D3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583837720.88789201</real>
+			<key>timeStoppedRecording</key>
+			<real>583837720.97740996</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>9C458A0B-0C8E-4656-B1EC-69035465F2D3</string>
+		</dict>
+		<key>A058C2FB-8983-4439-8388-150793627E0A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A058C2FB-8983-4439-8388-150793627E0A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583838963.58449495</real>
+			<key>timeStoppedRecording</key>
+			<real>583838964.27257502</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>A058C2FB-8983-4439-8388-150793627E0A</string>
+		</dict>
+		<key>A46F5136-7023-4B6F-BE3C-7FAB5F612E12</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A46F5136-7023-4B6F-BE3C-7FAB5F612E12.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583841246.06055498</real>
+			<key>timeStoppedRecording</key>
+			<real>583841247.10506701</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>A46F5136-7023-4B6F-BE3C-7FAB5F612E12</string>
+		</dict>
+		<key>AA2A4253-6F84-4262-8BC1-780D9A742A5D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AA2A4253-6F84-4262-8BC1-780D9A742A5D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583838779.987481</real>
+			<key>timeStoppedRecording</key>
+			<real>583838780.08231699</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>AA2A4253-6F84-4262-8BC1-780D9A742A5D</string>
+		</dict>
+		<key>AA81E20A-530A-4DA3-A195-F297FF21C191</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AA81E20A-530A-4DA3-A195-F297FF21C191.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583837645.50695598</real>
+			<key>timeStoppedRecording</key>
+			<real>583837646.91908002</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>AA81E20A-530A-4DA3-A195-F297FF21C191</string>
+		</dict>
+		<key>CBB3713C-B88A-4849-BC37-9FB1B5AA7298</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CBB3713C-B88A-4849-BC37-9FB1B5AA7298.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583888783.08216596</real>
+			<key>timeStoppedRecording</key>
+			<real>583888787.519467</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>CBB3713C-B88A-4849-BC37-9FB1B5AA7298</string>
+		</dict>
+		<key>D120B338-B914-41EC-9C0A-A7808E922AE7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D120B338-B914-41EC-9C0A-A7808E922AE7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583837064.60019004</real>
+			<key>timeStoppedRecording</key>
+			<real>583837065.03030396</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>D120B338-B914-41EC-9C0A-A7808E922AE7</string>
+		</dict>
+		<key>E6F7F900-3C89-43BA-B21C-020960096393</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E6F7F900-3C89-43BA-B21C-020960096393.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SimpleTable project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SimpleTable</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SimpleTable</string>
+			<key>timeStartedRecording</key>
+			<real>583837197.82529795</real>
+			<key>timeStoppedRecording</key>
+			<real>583837198.34766102</real>
+			<key>title</key>
+			<string>Build SimpleTable</string>
+			<key>uniqueIdentifier</key>
+			<string>E6F7F900-3C89-43BA-B21C-020960096393</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

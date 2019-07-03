@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "04080faec9745ff5e4fb81f229be40fb"
+build_time: [1562142908, 170072000]
+inputs:
+  "/Users/diana.duan/dev/lab/ipg/StackViewDemo/StackViewDemo/ViewController.swift": [1561587471, 471513081]
+  "/Users/diana.duan/dev/lab/ipg/StackViewDemo/StackViewDemo/AppDelegate.swift": [1561587471, 461557397]

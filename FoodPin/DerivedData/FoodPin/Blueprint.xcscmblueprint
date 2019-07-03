@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DC5ECD3AA8D60DADF1A588C5956E4908411D31E4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DC5ECD3AA8D60DADF1A588C5956E4908411D31E4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "983F1AB6-FFA4-4666-9468-C8E52D3F03BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DC5ECD3AA8D60DADF1A588C5956E4908411D31E4" : "ipg\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodPin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodPin\/FoodPin.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git@github.com:dianayn\/ipg.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC5ECD3AA8D60DADF1A588C5956E4908411D31E4"
+    }
+  ]
+}

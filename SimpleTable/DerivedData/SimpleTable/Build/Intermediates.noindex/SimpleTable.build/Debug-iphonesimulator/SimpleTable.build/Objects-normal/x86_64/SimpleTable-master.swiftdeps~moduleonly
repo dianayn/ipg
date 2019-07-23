@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "abedcfac52223e84e0a6afd961f3aa00"
-build_time: [1562196194, 692719000]
+build_time: [1563154872, 529178000]
 inputs:
-  "/Users/diana.duan/dev/lab/ipg/SimpleTable/SimpleTable/ViewController.swift": [1562196194, 646108075]
+  "/Users/diana.duan/dev/lab/ipg/SimpleTable/SimpleTable/ViewController.swift": [1563154865, 881320319]
   "/Users/diana.duan/dev/lab/ipg/SimpleTable/SimpleTable/AppDelegate.swift": [1562143060, 773401816]

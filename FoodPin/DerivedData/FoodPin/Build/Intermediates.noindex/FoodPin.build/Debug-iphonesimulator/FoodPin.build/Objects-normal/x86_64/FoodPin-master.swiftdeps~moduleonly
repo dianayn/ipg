@@ -1,5 +1,8 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "4a1eaa47b87ee25b4eecface1da103b6"
-build_time: [1562196599, 328037000]
+options: "8ba4c2d9be373ae06cb413c3993b2832"
+build_time: [1563518804, 725329000]
 inputs:
+  "/Users/diana.duan/dev/lab/ipg/FoodPin/FoodPin/RestaurantTableViewController.swift": [1563518804, 644677946]
+  "/Users/diana.duan/dev/lab/ipg/FoodPin/FoodPin/AdsTableViewCell.swift": [1563192166, 399746123]
+  "/Users/diana.duan/dev/lab/ipg/FoodPin/FoodPin/RestaurantTableViewCell.swift": [1562668011, 788731336]
   "/Users/diana.duan/dev/lab/ipg/FoodPin/FoodPin/AppDelegate.swift": [1562196520, 583813104]

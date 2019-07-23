@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9E1B2539-2688-4478-B975-948B7CF9E28F</key>
+		<key>703BCF58-680D-4421-91F1-773E75B7407A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,22 +15,22 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>9E1B2539-2688-4478-B975-948B7CF9E28F.xcactivitylog</string>
+			<string>703BCF58-680D-4421-91F1-773E75B7407A.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>FoodPin-ffmlwhcotpwjyrcvmpavowuhcsei</string>
 			<key>timeStartedRecording</key>
-			<real>583889542.37752104</real>
+			<real>585211604.71879697</real>
 			<key>timeStoppedRecording</key>
-			<real>583889544.113222</real>
+			<real>585211606.26096499</real>
 			<key>title</key>
 			<string>Build target FoodPin</string>
 			<key>uniqueIdentifier</key>
-			<string>9E1B2539-2688-4478-B975-948B7CF9E28F</string>
+			<string>703BCF58-680D-4421-91F1-773E75B7407A</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

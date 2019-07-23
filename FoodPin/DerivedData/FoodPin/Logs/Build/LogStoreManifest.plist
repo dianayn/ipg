@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>84456EA6-22D6-473F-894C-2F9AD0A90981</key>
+		<key>1F12B237-1F23-489F-A572-0D5F2C83B82F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,11 +15,11 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>84456EA6-22D6-473F-894C-2F9AD0A90981.xcactivitylog</string>
+			<string>1F12B237-1F23-489F-A572-0D5F2C83B82F.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>FoodPin project</string>
@@ -30,13 +30,205 @@
 			<key>signature</key>
 			<string>Build FoodPin</string>
 			<key>timeStartedRecording</key>
-			<real>583889542.31646299</real>
+			<real>585209120.51276803</real>
 			<key>timeStoppedRecording</key>
-			<real>583889544.11430299</real>
+			<real>585209123.07056797</real>
 			<key>title</key>
 			<string>Build FoodPin</string>
 			<key>uniqueIdentifier</key>
-			<string>84456EA6-22D6-473F-894C-2F9AD0A90981</string>
+			<string>1F12B237-1F23-489F-A572-0D5F2C83B82F</string>
+		</dict>
+		<key>5CA73A08-3DB7-4FA0-8649-394E67469342</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5CA73A08-3DB7-4FA0-8649-394E67469342.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>584934858.36883295</real>
+			<key>timeStoppedRecording</key>
+			<real>584934859.17811704</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>5CA73A08-3DB7-4FA0-8649-394E67469342</string>
+		</dict>
+		<key>8C486699-235A-4410-AE02-22A48728EBC2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8C486699-235A-4410-AE02-22A48728EBC2.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>585211430.03221095</real>
+			<key>timeStoppedRecording</key>
+			<real>585211430.92497003</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>8C486699-235A-4410-AE02-22A48728EBC2</string>
+		</dict>
+		<key>A38F3165-FF5B-4DBB-A290-4FCAF0153CAA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A38F3165-FF5B-4DBB-A290-4FCAF0153CAA.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>585211625.445418</real>
+			<key>timeStoppedRecording</key>
+			<real>585211625.61273205</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>A38F3165-FF5B-4DBB-A290-4FCAF0153CAA</string>
+		</dict>
+		<key>A52913E2-2D0A-4171-B62D-B38BD3C51E73</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A52913E2-2D0A-4171-B62D-B38BD3C51E73.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>585211799.51588595</real>
+			<key>timeStoppedRecording</key>
+			<real>585211799.66756999</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>A52913E2-2D0A-4171-B62D-B38BD3C51E73</string>
+		</dict>
+		<key>E001876F-7060-48DA-9010-5D2455ED4A08</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E001876F-7060-48DA-9010-5D2455ED4A08.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>585208887.90290797</real>
+			<key>timeStoppedRecording</key>
+			<real>585208888.02533305</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>E001876F-7060-48DA-9010-5D2455ED4A08</string>
+		</dict>
+		<key>FA71410C-A5D1-4E5F-9A56-0AD6E330A070</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA71410C-A5D1-4E5F-9A56-0AD6E330A070.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPin project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPin</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPin</string>
+			<key>timeStartedRecording</key>
+			<real>585211604.515836</real>
+			<key>timeStoppedRecording</key>
+			<real>585211606.43807805</real>
+			<key>title</key>
+			<string>Build FoodPin</string>
+			<key>uniqueIdentifier</key>
+			<string>FA71410C-A5D1-4E5F-9A56-0AD6E330A070</string>
 		</dict>
 	</dict>
 </dict>

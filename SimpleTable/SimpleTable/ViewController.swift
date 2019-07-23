@@ -8,31 +8,50 @@
 
 import UIKit
 
+protocol Model {
+}
+
+struct Restaurant: Model {
+  let title: String
+  let imageName: String
+}
+
+struct Ad: Model {
+  let title: String
+}
+
+//struct School: Model {}
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  var restaurantNames = ["Cage Deadend", "Home1", "Teakha","Cafe Loisl","Petite oyster","For Kee Restaurant","PO's Atelier","Bourke Street Bakery", "Haigh's choclate","Traif","Palomino Espresso","Upstate","Graham Avenue Meats And Deli","Five Leaves","Cafe Lore","Confessional","Barrafina","Royal","CASK Pub and Kitchen"]
+  let models: [Model] =
+  [
+    Restaurant(title: "Sichuan", imageName: "restaurant"),
+    Ad(title: "ads3"),
+    Restaurant(title: "Yunan", imageName: "restaurant"),
+    Ad(title: "ads1"),
+    Restaurant(title: "Malaysian", imageName: "restaurant"),
+    Ad(title: "ads2"),
+  ]
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return restaurantNames.count
+    return models.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cellIdentifier = "datacell"
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
-    cell.textLabel?.text = restaurantNames[indexPath.row]
-    cell.imageView?.image = UIImage(named: "restaurant")
+    //Type checking and Typecasting
+    if let restaurant = models[indexPath.row] as? Restaurant {
+      cell.textLabel?.text = restaurant.title
+      cell.imageView?.image = UIImage(named: restaurant.imageName)
+    } else if let ad = models[indexPath.row] as? Ad {
+      cell.textLabel?.text = ad.title
+    }
+
     return cell
   }
 
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-
-  override var prefersStatusBarHidden: Bool {
-    return true
-  }
 
 }
 

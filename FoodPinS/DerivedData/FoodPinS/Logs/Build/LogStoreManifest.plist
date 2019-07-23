@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPinS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPinS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPinS</string>
+			<key>timeStartedRecording</key>
+			<real>584934797.71881998</real>
+			<key>timeStoppedRecording</key>
+			<real>584934801.16179395</real>
+			<key>title</key>
+			<string>Build FoodPinS</string>
+			<key>uniqueIdentifier</key>
+			<string>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD</string>
+		</dict>
+		<key>98FB9041-563E-400D-A5C7-8AB748966926</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>98FB9041-563E-400D-A5C7-8AB748966926.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FoodPinS project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FoodPinS</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FoodPinS</string>
+			<key>timeStartedRecording</key>
+			<real>584924466.74642706</real>
+			<key>timeStoppedRecording</key>
+			<real>584924471.07316601</real>
+			<key>title</key>
+			<string>Build FoodPinS</string>
+			<key>uniqueIdentifier</key>
+			<string>98FB9041-563E-400D-A5C7-8AB748966926</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		YDLNhikjZBzUpqcqZmD2BJAXbKQ=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		z6vHXpEqWqsGcIyusoJi+y066rM=
@@ -22,11 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/RER-jF-ECR-view-Rb2-Yp-MVM.nib</key>
 		<data>
-		p+NAwCEWQA/DhUPFo2iK23Uzc1Q=
+		45t0WNY+G1gjfvy8bZ+U3zQXNKM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-RER-jF-ECR.nib</key>
 		<data>
-		0w7TPUCLJUCSKRrZx99R5anO3GU=
+		zxKArL77IQy/62uN8fAaW1qGsH0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -43,6 +47,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			41WVCjnKzyU9df6OyXCNfSmxJajVi3FzG9CtmOPML1E=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -75,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ZbRAyR3eUNIECnTRwYt2yUYuD9atGxOsD/Il+4Z3+g=
+			L1b+xUw+U28tb/ldm5U45ihOC8bMlIVHYx+wBz+QBGc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-RER-jF-ECR.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ttdOD3V5jNzrWYxAzrTy3GCUvmlg8Q17uGAJricWOYw=
+			RAhNjauysywd+ML6eV9nAOz9ORyMXiDgqCKP6GpzDsA=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

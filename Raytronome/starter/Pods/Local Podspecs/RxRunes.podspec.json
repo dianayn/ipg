@@ -1,0 +1,53 @@
+{
+  "name": "RxRunes",
+  "version": "0.1",
+  "summary": "Helper operators",
+  "description": "Your description here.",
+  "homepage": "https://github.com/RxSwiftCommunity/RxRunes",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Shai Mishali": "freak4pc@gmail.com"
+  },
+  "social_media_url": "",
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.9",
+    "watchos": "2.0",
+    "tvos": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/RxSwiftCommunity/RxRunes.git",
+    "tag": "0.1"
+  },
+  "frameworks": "Foundation",
+  "source_files": "Foundation",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "RxSwift",
+      "source_files": [
+        "Sources/RxSwift/*.swift",
+        "Sources/Runes.swift"
+      ]
+    },
+    {
+      "name": "RxCocoa",
+      "dependencies": {
+        "RxCocoa": [
+          "~> 4"
+        ]
+      },
+      "source_files": [
+        "Sources/RxCocoa/*.swift",
+        "Sources/Runes.swift"
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>01510099-0400-45BD-8C2B-5B3477CB0267</key>
+		<key>69519A27-FDAF-45A0-9D53-C7F3D572D458</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>01510099-0400-45BD-8C2B-5B3477CB0267.xcactivitylog</string>
+			<string>69519A27-FDAF-45A0-9D53-C7F3D572D458.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,13 +30,13 @@
 			<key>signature</key>
 			<string>Debug FoodPinS</string>
 			<key>timeStartedRecording</key>
-			<real>584924470.99568498</real>
+			<real>588052849.64791405</real>
 			<key>timeStoppedRecording</key>
-			<real>584924788.87470102</real>
+			<real>588058316.70841503</real>
 			<key>title</key>
 			<string>Debug FoodPinS</string>
 			<key>uniqueIdentifier</key>
-			<string>01510099-0400-45BD-8C2B-5B3477CB0267</string>
+			<string>69519A27-FDAF-45A0-9D53-C7F3D572D458</string>
 		</dict>
 	</dict>
 </dict>

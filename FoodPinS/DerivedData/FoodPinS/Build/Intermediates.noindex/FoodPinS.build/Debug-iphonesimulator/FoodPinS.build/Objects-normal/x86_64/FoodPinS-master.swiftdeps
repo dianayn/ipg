@@ -1,6 +1,9 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "e74dab2f18155649f9a561ce5e90fe3b"
-build_time: [1563231667, 54839000]
+build_time: [1565692989, 624602000]
 inputs:
-  "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/RestaurantTableViewController.swift": [1563231666, 759022438]
+  "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/Model/Restaurant.swift": [1565261967, 407836746]
+  "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/Controller/RestaurantTableViewController.swift": [1565692989, 520121413]
+  "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/View/RestaurantTableViewCell.swift": [1564397084, 240395799]
+  "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/Controller/RestaurantDetailsViewController.swift": [1565263188, 597405538]
   "/Users/diana.duan/dev/lab/ipg/FoodPinS/FoodPinS/AppDelegate.swift": [1563229295, 614591192]

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD</key>
+		<key>11C45804-6028-4EE9-8F1C-C7F11DC842C8</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD.xcactivitylog</string>
+			<string>11C45804-6028-4EE9-8F1C-C7F11DC842C8.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,45 +30,13 @@
 			<key>signature</key>
 			<string>Build FoodPinS</string>
 			<key>timeStartedRecording</key>
-			<real>584934797.71881998</real>
+			<real>588052849.51136601</real>
 			<key>timeStoppedRecording</key>
-			<real>584934801.16179395</real>
+			<real>588052849.79927802</real>
 			<key>title</key>
 			<string>Build FoodPinS</string>
 			<key>uniqueIdentifier</key>
-			<string>87CD6CE9-A7F5-45FB-A9DA-8E8ACCE905BD</string>
-		</dict>
-		<key>98FB9041-563E-400D-A5C7-8AB748966926</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>98FB9041-563E-400D-A5C7-8AB748966926.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FoodPinS project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FoodPinS</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FoodPinS</string>
-			<key>timeStartedRecording</key>
-			<real>584924466.74642706</real>
-			<key>timeStoppedRecording</key>
-			<real>584924471.07316601</real>
-			<key>title</key>
-			<string>Build FoodPinS</string>
-			<key>uniqueIdentifier</key>
-			<string>98FB9041-563E-400D-A5C7-8AB748966926</string>
+			<string>11C45804-6028-4EE9-8F1C-C7F11DC842C8</string>
 		</dict>
 	</dict>
 </dict>

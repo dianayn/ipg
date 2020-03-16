@@ -3,7 +3,7 @@
 <plist version="1.0">
 <array>
 	<string>XCTest</string>
-	<string>FoodPin</string>
 	<string>UIKit</string>
+	<string>FoodPin</string>
 </array>
 </plist>

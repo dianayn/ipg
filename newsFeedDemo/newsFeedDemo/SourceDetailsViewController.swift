@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class SourceNewsViewController: UIViewController {
+class SourceDetailsViewController: UIViewController {
 
     private let newsTitleLabel = UILabel()
     private let newsDetailsLabel = UILabel()
@@ -46,10 +46,10 @@ class SourceNewsViewController: UIViewController {
         ])
     }
 
-    func updateView(viewModel: NewsDetailsViewModel) {
-        newsTitleLabel.text = viewModel.newsTitle
-        newsDetailsLabel.text = viewModel.newsDetails
-    }
+//    func updateView(viewModel: NewsDetailsViewModel) {
+//        newsTitleLabel.text = viewModel.newsTitle
+//        newsDetailsLabel.text = viewModel.newsDetails
+//    }
 }
     
 

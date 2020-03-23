@@ -6,5 +6,7 @@ target 'newsFeedDemo' do
   use_frameworks!
 
   # Pods for newsFeedDemo
+  
+  pod 'Kingfisher', '~> 5.0'
 
 end

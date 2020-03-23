@@ -4,7 +4,6 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
 
     let fetchData = Network()
     let cellIdentifier = "SourcesListing"
-
     var sourcesList = [Sources]()
 
     let sourcesListTableView: UITableView = {
@@ -23,21 +22,19 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
 
         fetchData.downloadJSON(onSuccess: { sourcesList in
 
-           self.sourcesList = sourcesList
-           self.sourcesListTableView.reloadData()
+            self.sourcesList = sourcesList
+            self.sourcesListTableView.reloadData()
 
         }, OnError: { error in
             print(error)
             return ()
         })
 
-
         setupTableView()
 
     }
 
     func setupTableView() {
-
         view.addSubview(sourcesListTableView)
         self.sourcesListTableView.register(SourcesListCell.self, forCellReuseIdentifier: cellIdentifier)
 
@@ -64,49 +61,20 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
 
         let sourcesListCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SourcesListCell
         sourcesListCell.backgroundColor = UIColor.orange
-
         sourcesListCell.configure(withSources: sourcesList[indexPath.row])
-
         return sourcesListCell
     }
 
+    func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sourcesListCell = sourcesList[indexPath.row]
+        let id = sourcesListCell.id
+        let sourceDetailsViewController = SourceDetailsViewController()
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let sourceNewsViewController = SourceNewsViewController()
-//
-//        let newsViewModel: NewsDetailsViewModel = listViewModel.newsViewModel(for: indexPath.row)
-//
-//        sourceNewsViewController.updateView(viewModel: newsViewModel)
-//
-//        present(sourceNewsViewController, animated: true, completion: nil)
-//    }
+       present(sourceDetailsViewController, animated: true, completion: nil)
 
-//    func downloadJSON(onSuccess: @escaping ([Sources]) -> Void , OnError: @escaping (Error) -> Void) {
-//
-//        let url = URL(string: "https://newsapi.org/v2/sources?apiKey=757ac663ec054817a1c43701e5979d20") // 1
-//
-////        URLSessionDataTask: Use this task for GET requests to retrieve data from servers to memory.
-//        let a = URLSession.shared.dataTask(with: url!) { (data, response, error) in // 2
-//
-////             Check error
-//            if error == nil { // 3
-//                do {
-////                     Parse json
-//                   let news = try JSONDecoder().decode(NewsFeed.self, from: data!).sources
-//
-////                     You can start doing the heavy lifting on a background queue and dispatch back to the main queue when you’re done.
-//                    DispatchQueue.main.async {
-//                        onSuccess(news)
-//                    }
-//                } catch {
-//                    OnError(error)
-//                }
-//            } else {
-//                OnError(error!)
-//            }
-//        }
-//        a.resume()
-//    }
+
+
+    }
 
 }
 

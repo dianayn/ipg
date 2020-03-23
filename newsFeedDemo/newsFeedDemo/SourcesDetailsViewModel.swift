@@ -12,7 +12,7 @@ struct SourcesDetailsViewModel {
     let articleDetailsTitle: String
     let articleDescription: String
     let articleImage: String
-    let articlePublishedAt: Date
+    let articlePublishedAt: String
 
 
     public init(articles: Articles) {
@@ -29,9 +29,8 @@ struct SourcesDetailsFeed: Decodable {
 }
 
 struct Articles: Decodable {
-    let source: [Sources]
     let title: String?
     let description: String?
     let urlToImage: String?
-    let publishedAt: Date
+    let publishedAt: String
 }

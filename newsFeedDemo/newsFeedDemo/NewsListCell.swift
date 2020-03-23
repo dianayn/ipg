@@ -7,43 +7,65 @@
 //
 
 import UIKit
+import Kingfisher
 
 class NewsListCell: UITableViewCell {
 
     static let identifierNewsCell = "NewsListing"
 
-    let newsTitleLabel: UILabel = {
-        let newsTitle = UILabel()
-
-        newsTitle.textColor = UIColor.white
-        newsTitle.font = UIFont.boldSystemFont(ofSize: 16)
-        newsTitle.translatesAutoresizingMaskIntoConstraints = false
-        return newsTitle
-    }()
-
     let stackView: UIStackView = {
         let stackView = UIStackView()
 
         stackView.axis = .vertical
+        stackView.alignment = .trailing
+        stackView.distribution = .fillEqually
+//        stackView.spacing = 3
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
 
-    let newsDescriptionLabel: UILabel = {
-        let newsDescription = UILabel()
-
-        newsDescription.textColor = UIColor.white
-        newsDescription.font = UIFont.boldSystemFont(ofSize: 16)
-        newsDescription.translatesAutoresizingMaskIntoConstraints = false
-        return newsDescription
-    }()
 
     let thumbNailImageView: UIImageView = {
         let thumbNailImage = UIImageView()
 
+        thumbNailImage.contentMode = .scaleAspectFit
+        thumbNailImage.sizeToFit()
         thumbNailImage.translatesAutoresizingMaskIntoConstraints = false
         return thumbNailImage
     }()
+
+
+    let newsTitleLabel: UILabel = {
+        let newsTitle = UILabel()
+
+        newsTitle.textColor = UIColor.black
+        newsTitle.font = UIFont.boldSystemFont(ofSize: 16)
+        newsTitle.numberOfLines = 0
+        newsTitle.translatesAutoresizingMaskIntoConstraints = false
+        return newsTitle
+    }()
+
+
+    let newsDescriptionLabel: UILabel = {
+        let newsDescription = UILabel()
+
+        newsDescription.textColor = UIColor.black
+        newsDescription.font = UIFont.italicSystemFont(ofSize: 12)
+        newsDescription.numberOfLines = 2
+        newsDescription.translatesAutoresizingMaskIntoConstraints = false
+        return newsDescription
+    }()
+
+    let newsPublishedAtLabel: UILabel = {
+        let newsPublishedAt = UILabel()
+
+        newsPublishedAt.textColor = UIColor.black
+        newsPublishedAt.font = UIFont.italicSystemFont(ofSize: 10)
+        newsPublishedAt.numberOfLines = 1
+        newsPublishedAt.translatesAutoresizingMaskIntoConstraints = false
+        return newsPublishedAt
+    }()
+
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -58,42 +80,44 @@ class NewsListCell: UITableViewCell {
 
     func setupView() {
         
-        addSubview(thumbNailImageView)
+        contentView.addSubview(thumbNailImageView)
+        contentView.addSubview(stackView)
 
-        addSubview(stackView)
         stackView.addArrangedSubview(newsTitleLabel)
+        stackView.addArrangedSubview(newsPublishedAtLabel)
         stackView.addArrangedSubview(newsDescriptionLabel)
-
 
         NSLayoutConstraint.activate([
 
-            thumbNailImageView.heightAnchor.constraint(equalTo: self.heightAnchor, constant: 50),
-            thumbNailImageView.widthAnchor.constraint(equalTo: self.widthAnchor, constant: 50),
-            thumbNailImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
+            // MARK: - thumbNailImageView is aligned with StackView horizontally, how to get them align properly
+            // MARK: - in which scenario, using a fixed heightAnchor and widthAnchor is better
+            // MARK: - labels in the stackView Vertically
+            // MARK: - if creates a constraint between labels in the stackView, is stackView.spacing still needed?
+            // MARK: - what is the best way to get the thumbnailImage
 
-            stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
-//            stackView.widthAnchor.constraint(equalTo: self.widthAnchor, constant: 60),
-            stackView.leadingAnchor.constraint(equalTo: thumbNailImageView.trailingAnchor, constant: 5),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),
-            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5),
+            // MARK: - autoresizing
 
-            newsTitleLabel.topAnchor.constraint(equalTo: stackView.topAnchor),
-            newsTitleLabel.bottomAnchor.constraint(equalTo: newsDescriptionLabel.topAnchor, constant: 2),
-            newsTitleLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 1),
+            thumbNailImageView.heightAnchor.constraint(equalToConstant: 80),
+            thumbNailImageView.widthAnchor.constraint(equalToConstant: 90),
+            thumbNailImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 2),
+            thumbNailImageView.trailingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: -5),
 
-            newsDescriptionLabel.bottomAnchor.constraint(equalTo: stackView.bottomAnchor),
-            newsDescriptionLabel.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
-            newsDescriptionLabel.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
+            thumbNailImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
 
         ])
     }
 
-    func configure(withArticles articles: Articles) {
+    func configure(withArticles articles: Articles, imageURL: String) {
         newsTitleLabel.text = articles.title
+        newsPublishedAtLabel.text = articles.publishedAt
         newsDescriptionLabel.text = articles.description
-        thumbNailImageView.image = articles.urlToImage
-    }
 
-    
+        thumbNailImageView.kf.indicatorType = .activity
+        thumbNailImageView.kf.setImage(with: URL(string: imageURL), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+    }
 
 }

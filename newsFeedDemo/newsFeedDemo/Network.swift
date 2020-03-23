@@ -12,6 +12,7 @@ class Network {
 
     var sourcesList = [Sources]()
 
+
     func downloadJSON(onSuccess: @escaping ([Sources]) -> Void , OnError: @escaping (Error) -> Void) -> [Sources] {
 
         let url = URL(string: "https://newsapi.org/v2/sources?apiKey=3b2ec6050fdf4c53b0500c4bfed546be")

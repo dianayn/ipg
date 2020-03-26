@@ -13,10 +13,10 @@ class NewsDetailsViewModel {
     let newsDescription: String
     let newsImage: String
 
-    init(articles: Articles) {
-        self.newsTitle = articles.title ?? "noTitle"
-        self.newsDescription = articles.description ?? "noDescription"
-        self.newsImage = articles.urlToImage ?? "noImage"
+    init(article: Article) {
+        self.newsTitle = article.title ?? "noTitle"
+        self.newsDescription = article.description ?? "noDescription"
+        self.newsImage = article.urlToImage ?? "noImage"
     }
 
 }

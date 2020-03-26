@@ -61,9 +61,9 @@ class SourcesListCell: UITableViewCell {
         ])
     }
 
-    func configure(withSources sources: Sources) {
-        sourceTitleLabel.text = sources.name
-        sourceDetailsLabel.text = sources.description
+    func configure(withSources viewModel: SourcesListViewModel) {
+        sourceTitleLabel.text = viewModel.sourceName
+        sourceDetailsLabel.text = viewModel.sourceDescription
     }
 
 }

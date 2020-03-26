@@ -17,9 +17,9 @@ class NewsListCell: UITableViewCell {
         let stackView = UIStackView()
 
         stackView.axis = .vertical
-        stackView.alignment = .trailing
-        stackView.distribution = .fillEqually
-//        stackView.spacing = 3
+        stackView.alignment = .leading
+        stackView.distribution = .fill
+        stackView.spacing = 3
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -103,7 +103,6 @@ class NewsListCell: UITableViewCell {
             thumbNailImageView.trailingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: -5),
 
             thumbNailImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
@@ -111,10 +110,10 @@ class NewsListCell: UITableViewCell {
         ])
     }
 
-    func configure(withArticles articles: Articles, imageURL: String) {
-        newsTitleLabel.text = articles.title
-        newsPublishedAtLabel.text = articles.publishedAt
-        newsDescriptionLabel.text = articles.description
+    func configure(withArticle sourcesDetailsViewModel: SourcesDetailsViewModel, imageURL: String) {
+        newsTitleLabel.text = sourcesDetailsViewModel.articleDetailsTitle
+        newsPublishedAtLabel.text = sourcesDetailsViewModel.articlePublishedAt
+        newsDescriptionLabel.text = sourcesDetailsViewModel.articleDescription
 
         thumbNailImageView.kf.indicatorType = .activity
         thumbNailImageView.kf.setImage(with: URL(string: imageURL), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)

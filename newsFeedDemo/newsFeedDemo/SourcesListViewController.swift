@@ -4,7 +4,7 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
 
     let fetchData = Network()
     let cellIdentifier = "SourcesListing"
-    var sourcesList = [Sources]()
+    var sourcesList = [Source]()
 
     let sourcesListTableView: UITableView = {
         let sources = UITableView()
@@ -20,7 +20,7 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
         sourcesListTableView.delegate = self
         sourcesListTableView.dataSource = self
 
-        fetchData.downloadJSON(onSuccess: { sourcesList in
+        fetchData.downloadSources(onSuccess: { sourcesList in
 
             self.sourcesList = sourcesList
             self.sourcesListTableView.reloadData()
@@ -51,29 +51,25 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
         return sourcesList.count
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
-        return 100
-    }
-
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let sourcesListCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SourcesListCell
         sourcesListCell.backgroundColor = UIColor.orange
-        sourcesListCell.configure(withSources: sourcesList[indexPath.row])
+
+        let viewModel = SourcesListViewModel(sources: sourcesList[indexPath.row])
+        sourcesListCell.configure(withSources: viewModel)
         return sourcesListCell
     }
 
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sourcesListCell = sourcesList[indexPath.row]
-        let id = sourcesListCell.id
-        let sourceDetailsViewController = SourceDetailsViewController()
+        let source = sourcesList[indexPath.row]
+
+        let sourceId = source.id
+
+        let sourceDetailsViewController = SourceDetailsViewController(withID: sourceId!)
+//        sourceDetailsViewController.source = source
 
        present(sourceDetailsViewController, animated: true, completion: nil)
-
-
-
     }
 
 }

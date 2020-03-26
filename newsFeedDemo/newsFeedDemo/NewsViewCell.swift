@@ -65,8 +65,8 @@ class newsViewCell: UITableViewCell {
         ])
     }
 
-    func configure(withNews sources: Sources) {
-        titleLabel.text = sources.name
-        descriptionLabel.text = sources.description
+    func configure(withNews source: Source) {
+        titleLabel.text = source.name
+        descriptionLabel.text = source.description
     }
 }

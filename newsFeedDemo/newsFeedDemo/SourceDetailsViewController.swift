@@ -3,21 +3,24 @@ import Foundation
 
 class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    public var source: Source?
+
     private let fetchNews = FetchNews()
     private let cellIdentifier = "NewsListing"
-    var articlesList = [Articles]()
+    var articleList = [Article]()
+    var requestId: String
 
-    let articlesListTableView: UITableView = {
-           let articles = UITableView()
-           articles.backgroundColor = UIColor.white
-           articles.separatorColor = UIColor.white
-           articles.translatesAutoresizingMaskIntoConstraints = false
-           return articles
+    let articleListTableView: UITableView = {
+           let article = UITableView()
+           article.backgroundColor = UIColor.white
+           article.separatorColor = UIColor.white
+           article.translatesAutoresizingMaskIntoConstraints = false
+           return article
            }()
 
-    // MARK: - xCode is not happy when trying to inject a string
-    init(withRequestID: String) {
-        super.init()
+    init(withID id: String) {
+        self.requestId = id
+        super.init(nibName: nil, bundle: nil)
 
     }
 
@@ -28,14 +31,18 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        articlesListTableView.delegate = self
-        articlesListTableView.dataSource = self
+        print(source)
+
+        articleListTableView.delegate = self
+        articleListTableView.dataSource = self
 
         // MARK: - need to pass the ID from here for the network call
-        fetchNews.downloadJSON(onSuccess: { articlesList in
+        // netowkr.fetchNewsFromSource(id: source.id) { ... }
 
-            self.articlesList = articlesList
-            self.articlesListTableView.reloadData()
+        fetchNews.downloadJSON(withID: requestId, onSuccess: { articlesList in
+
+            self.articleList = articlesList
+            self.articleListTableView.reloadData()
 
         }, OnError: { error in
             print(error)
@@ -47,30 +54,31 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     func setupTableView() {
-        view.addSubview(articlesListTableView)
-        self.articlesListTableView.register(NewsListCell.self, forCellReuseIdentifier: cellIdentifier)
+        view.addSubview(articleListTableView)
+        self.articleListTableView.register(NewsListCell.self, forCellReuseIdentifier: cellIdentifier)
 
         NSLayoutConstraint.activate([
-            articlesListTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            articlesListTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            articlesListTableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-            articlesListTableView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            articleListTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            articleListTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            articleListTableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            articleListTableView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
         ])
         
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return articlesList.count
+        return articleList.count
     }
-
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let articlesListCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewsListCell
         articlesListCell.backgroundColor = UIColor.orange
 
-        let imageToURL = articlesList[indexPath.row].urlToImage
-        articlesListCell.configure(withArticles: articlesList[indexPath.row], imageURL: imageToURL!)
+        let sourceDetailsViewModel = SourcesDetailsViewModel(article: articleList[indexPath.row])
+
+        let imageToURL = sourceDetailsViewModel.articleImage
+        articlesListCell.configure(withArticle: sourceDetailsViewModel, imageURL: imageToURL)
         return articlesListCell
     }
 }

@@ -9,13 +9,11 @@ import Foundation
 
 class FetchNews {
 
-    var articlesList = [Articles]()
-
     // MARK: - implementation task, Passing id in the request 
 
-    func downloadJSON(onSuccess: @escaping ([Articles]) -> Void , OnError: @escaping (Error) -> Void) -> [Articles] {
+    func downloadJSON(withID requestId: String, onSuccess: @escaping ([Article]) -> Void , OnError: @escaping (Error) -> Void) {
 
-        let url = URL(string: "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3b2ec6050fdf4c53b0500c4bfed546be")
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?sources=\(requestId)&apiKey=3b2ec6050fdf4c53b0500c4bfed546be")
 
         var request = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
 
@@ -25,7 +23,7 @@ class FetchNews {
 
             if error == nil {
                 do {
-                    let articlesList = try JSONDecoder().decode(SourcesDetailsFeed.self, from: data!).articles
+                    let articlesList = try JSONDecoder().decode(ArticleFeed.self, from: data!).articles
 
                     DispatchQueue.main.async {
                         onSuccess(articlesList)
@@ -38,7 +36,5 @@ class FetchNews {
             }
         }
         task.resume()
-        return articlesList
     }
-
 }

@@ -1,3 +1,6 @@
 import UIKit
+import RxSwift
 
-var str = "Hello, playground"
+example(of: "creating observables") {
+    let mostPopular: Observables<String> = Observables.just(episodeV)
+}

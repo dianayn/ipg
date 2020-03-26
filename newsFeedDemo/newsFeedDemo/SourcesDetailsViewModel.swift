@@ -15,22 +15,14 @@ struct SourcesDetailsViewModel {
     let articlePublishedAt: String
 
 
-    public init(articles: Articles) {
-        articleDetailsTitle = articles.title ?? "noTitle"
-        articleDescription = articles.description ?? "noDescription"
-        articleImage = articles.urlToImage ?? "noImage"
-        articlePublishedAt = articles.publishedAt 
+    public init(article: Article) {
+        articleDetailsTitle = article.title ?? "noTitle"
+        articleDescription = article.description ?? "noDescription"
+        articleImage = article.urlToImage ?? "noImage"
+        articlePublishedAt = article.publishedAt 
     }
 }
 
-struct SourcesDetailsFeed: Decodable {
-    let status: String?
-    let articles: [Articles]
-}
 
-struct Articles: Decodable {
-    let title: String?
-    let description: String?
-    let urlToImage: String?
-    let publishedAt: String
-}
+
+

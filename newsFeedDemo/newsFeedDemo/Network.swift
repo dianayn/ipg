@@ -10,10 +10,7 @@ import Foundation
 
 class Network {
 
-    var sourcesList = [Sources]()
-
-
-    func downloadJSON(onSuccess: @escaping ([Sources]) -> Void , OnError: @escaping (Error) -> Void) -> [Sources] {
+    func downloadSources(onSuccess: @escaping ([Source]) -> Void , OnError: @escaping (Error) -> Void) {
 
         let url = URL(string: "https://newsapi.org/v2/sources?apiKey=3b2ec6050fdf4c53b0500c4bfed546be")
 
@@ -25,7 +22,7 @@ class Network {
 
             if error == nil {
                 do {
-                    let sourcesList = try JSONDecoder().decode(SourcesFeed.self, from: data!).sources
+                    let sourcesList = try JSONDecoder().decode(SourceFeed.self, from: data!).sources
 
                     DispatchQueue.main.async {
                         onSuccess(sourcesList)
@@ -39,8 +36,5 @@ class Network {
             }
         }
         task.resume()
-        return sourcesList
     }
-
-    
 }

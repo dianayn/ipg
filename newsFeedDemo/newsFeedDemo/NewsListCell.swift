@@ -24,7 +24,6 @@ class NewsListCell: UITableViewCell {
         return stackView
     }()
 
-
     let thumbNailImageView: UIImageView = {
         let thumbNailImage = UIImageView()
 
@@ -33,7 +32,6 @@ class NewsListCell: UITableViewCell {
         thumbNailImage.translatesAutoresizingMaskIntoConstraints = false
         return thumbNailImage
     }()
-
 
     let newsTitleLabel: UILabel = {
         let newsTitle = UILabel()
@@ -44,7 +42,6 @@ class NewsListCell: UITableViewCell {
         newsTitle.translatesAutoresizingMaskIntoConstraints = false
         return newsTitle
     }()
-
 
     let newsDescriptionLabel: UILabel = {
         let newsDescription = UILabel()
@@ -103,6 +100,7 @@ class NewsListCell: UITableViewCell {
             thumbNailImageView.trailingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: -5),
 
             thumbNailImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
@@ -110,13 +108,13 @@ class NewsListCell: UITableViewCell {
         ])
     }
 
-    func configure(withArticle sourcesDetailsViewModel: SourcesDetailsViewModel, imageURL: String) {
+    func configure(withArticle sourcesDetailsViewModel: SourcesDetailsViewModel) {
         newsTitleLabel.text = sourcesDetailsViewModel.articleDetailsTitle
         newsPublishedAtLabel.text = sourcesDetailsViewModel.articlePublishedAt
         newsDescriptionLabel.text = sourcesDetailsViewModel.articleDescription
 
         thumbNailImageView.kf.indicatorType = .activity
-        thumbNailImageView.kf.setImage(with: URL(string: imageURL), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+        thumbNailImageView.kf.setImage(with: URL(string: sourcesDetailsViewModel.articleImage), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
     }
 
 }

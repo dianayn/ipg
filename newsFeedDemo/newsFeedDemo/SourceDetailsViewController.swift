@@ -20,8 +20,8 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
 
     init(withID id: String) {
         self.requestId = id
+        
         super.init(nibName: nil, bundle: nil)
-
     }
 
     required init?(coder: NSCoder) {
@@ -30,8 +30,6 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(source)
 
         articleListTableView.delegate = self
         articleListTableView.dataSource = self
@@ -77,9 +75,15 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
 
         let sourceDetailsViewModel = SourcesDetailsViewModel(article: articleList[indexPath.row])
 
-        let imageToURL = sourceDetailsViewModel.articleImage
-        articlesListCell.configure(withArticle: sourceDetailsViewModel, imageURL: imageToURL)
+        articlesListCell.configure(withArticle: sourceDetailsViewModel)
         return articlesListCell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let article: Article = articleList[indexPath.row]
+        let detailsViewController = NewsDetailsViewController(withDetails: article)
+        present(detailsViewController, animated: true, completion: nil)
     }
 }
     

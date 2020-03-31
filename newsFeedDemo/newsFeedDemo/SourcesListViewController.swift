@@ -67,7 +67,6 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
         let sourceId = source.id
 
         let sourceDetailsViewController = SourceDetailsViewController(withID: sourceId!)
-//        sourceDetailsViewController.source = source
 
        present(sourceDetailsViewController, animated: true, completion: nil)
     }

@@ -9,8 +9,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(windowScene: windowScene)
-
-        let sourceListViewController = SourcesListViewController()
+//        let article: Article = Article(title: "title", description: "description", urlToImage: nil, publishedAt: "2020")
+        let sourceListViewController: SourcesListViewController = SourcesListViewController()
         let navigationController = UINavigationController(rootViewController: sourceListViewController)
         window?.makeKeyAndVisible()
         window?.rootViewController = navigationController

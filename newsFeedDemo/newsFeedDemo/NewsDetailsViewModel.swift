@@ -18,5 +18,4 @@ class NewsDetailsViewModel {
         self.newsDescription = article.description ?? "noDescription"
         self.newsImage = article.urlToImage ?? "noImage"
     }
-
 }

@@ -10,6 +10,8 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
     var articleList = [Article]()
     var requestId: String
 
+   var navBar: UINavigationBar
+
     let articleListTableView: UITableView = {
            let article = UITableView()
            article.backgroundColor = UIColor.white
@@ -20,6 +22,7 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
 
     init(withID id: String) {
         self.requestId = id
+        self.navBar = UINavigationBar()
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -30,6 +33,13 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
+        let navItem = UINavigationItem(title: "Souce Details")
+        let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped))
+
+        navItem.leftBarButtonItem = backButton
+        navBar.setItems([navItem], animated: true)
 
         articleListTableView.delegate = self
         articleListTableView.dataSource = self
@@ -48,20 +58,19 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
         })
 
         setupTableView()
-        
     }
 
     func setupTableView() {
         view.addSubview(articleListTableView)
+        view.addSubview(navBar)
         self.articleListTableView.register(NewsListCell.self, forCellReuseIdentifier: cellIdentifier)
 
         NSLayoutConstraint.activate([
-            articleListTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            articleListTableView.topAnchor.constraint(equalTo: self.navBar.bottomAnchor),
             articleListTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             articleListTableView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             articleListTableView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
         ])
-        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,6 +93,10 @@ class SourceDetailsViewController: UIViewController, UITableViewDataSource, UITa
         let article: Article = articleList[indexPath.row]
         let detailsViewController = NewsDetailsViewController(withDetails: article)
         present(detailsViewController, animated: true, completion: nil)
+    }
+
+    @objc func cancelTapped() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
     

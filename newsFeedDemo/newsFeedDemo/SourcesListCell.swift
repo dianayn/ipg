@@ -12,24 +12,24 @@ class SourcesListCell: UITableViewCell {
 
     static let reuseIdentifier = "SourcesListing"
 
-        let sourceTitleLabel: UILabel = {
-            let sourceTitle = UILabel()
+    let sourceTitleLabel: UILabel = {
+        let sourceTitle = UILabel()
 
-            sourceTitle.textColor = UIColor.white
-            sourceTitle.font = UIFont.boldSystemFont(ofSize: 16)
-            sourceTitle.translatesAutoresizingMaskIntoConstraints = false
-            return sourceTitle
-        }()
+        sourceTitle.textColor = UIColor.white
+        sourceTitle.font = UIFont.boldSystemFont(ofSize: 16)
+        sourceTitle.translatesAutoresizingMaskIntoConstraints = false
+        return sourceTitle
+    }()
 
-        let sourceDetailsLabel: UILabel = {
-            let sourceDetails = UILabel()
+    let sourceDetailsLabel: UILabel = {
+        let sourceDetails = UILabel()
 
-            sourceDetails.textColor = UIColor.white
-            sourceDetails.font = UIFont.italicSystemFont(ofSize: 12)
-            sourceDetails.numberOfLines = 0
-            sourceDetails.translatesAutoresizingMaskIntoConstraints = false
-            return sourceDetails
-        }()
+        sourceDetails.textColor = UIColor.white
+        sourceDetails.font = UIFont.italicSystemFont(ofSize: 12)
+        sourceDetails.numberOfLines = 0
+        sourceDetails.translatesAutoresizingMaskIntoConstraints = false
+        return sourceDetails
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -45,6 +45,7 @@ class SourcesListCell: UITableViewCell {
     func setupView() {
         addSubview(sourceTitleLabel)
         addSubview(sourceDetailsLabel)
+       
 
         NSLayoutConstraint.activate([
 

@@ -5,9 +5,19 @@ class NewsDetailsViewController: UIViewController {
 
     let details: Article
 
+    var navBar: UINavigationBar
+
     init(withDetails articleDetails: Article) {
         self.details = articleDetails
+        self.navBar = UINavigationBar()
         super.init(nibName: nil, bundle: nil)
+
+        navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
+        let navItem = UINavigationItem(title: "Details")
+        let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped))
+        
+        navItem.leftBarButtonItem = backButton
+        navBar.setItems([navItem], animated: true)
     }
 
     required init?(coder: NSCoder) {
@@ -25,6 +35,12 @@ class NewsDetailsViewController: UIViewController {
 
         self.view = view
 
+
+
+    }
+
+    @objc func cancelTapped() {
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

@@ -4,12 +4,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(windowScene: windowScene)
-//        let article: Article = Article(title: "title", description: "description", urlToImage: nil, publishedAt: "2020")
+
         let sourceListViewController: SourcesListViewController = SourcesListViewController()
         let navigationController = UINavigationController(rootViewController: sourceListViewController)
         window?.makeKeyAndVisible()

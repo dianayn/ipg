@@ -66,7 +66,7 @@ class ArticleDetails: UIView {
     func setupView() {
 
         self.addSubview(stackView)
-        self.backgroundColor = UIColor.green
+        self.backgroundColor = UIColor.white
         stackView.addArrangedSubview(articelImage)
         stackView.addArrangedSubview(articleTitle)
         stackView.addArrangedSubview(articleDetails)

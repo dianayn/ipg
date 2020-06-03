@@ -67,9 +67,11 @@ class SourcesListViewController: UIViewController, UITableViewDelegate, UITableV
         let sourceId = source.id
 
         let sourceDetailsViewController = SourceDetailsViewController(withID: sourceId!)
-
-       present(sourceDetailsViewController, animated: true, completion: nil)
+        present(sourceDetailsViewController, animated: true, completion: nil)
     }
 
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
